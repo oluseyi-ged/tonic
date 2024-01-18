@@ -1,0 +1,15 @@
+export const Marked = require('./home/marker.png');
+export const Onb1 = require('./home/onb1.png');
+export const Onb2 = require('./home/onb2.png');
+export const Onb3 = require('./home/onb3.png');
+export const WelcomeBg = require('./home/welcome.png');
+export const Bump = require('./home/bump.png');
+export const Setup = require('./home/setup.png');
+export const Extra1 = require('./home/extra1.png');
+export const Extra2 = require('./home/extra2.png');
+export const Snap1 = require('./home/snap1.png');
+export const Ad1 = require('./home/ad1.png');
+export const Ad2 = require('./home/ad2.png');
+export const Ad3 = require('./home/ad3.png');
+export const Ad4 = require('./home/ad4.png');
+export const Ad5 = require('./home/ad5.png');
