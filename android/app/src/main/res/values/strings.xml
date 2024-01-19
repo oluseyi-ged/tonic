@@ -1,4 +1,4 @@
 <resources>
-    <string name="app_name">rn-starter</string>
+    <string name="app_name">Bikes</string>
       <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyDkMuW-hGvdRfUhsb2R9RFqA0Pq4Qxg4Cs</string>
 </resources>

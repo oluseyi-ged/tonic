@@ -21,7 +21,7 @@ if linkage != nil
   use_frameworks! :linkage => linkage.to_sym
 end
 
-target 'rnstarter' do
+target 'Bikes' do
 
   config = use_native_modules!
 
@@ -52,7 +52,7 @@ target 'rnstarter' do
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
 
-  target 'rnstarterTests' do
+  target 'BikesTests' do
     inherit! :complete
     # Pods for testing
   end
