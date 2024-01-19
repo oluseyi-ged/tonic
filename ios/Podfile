@@ -1,7 +1,7 @@
 require_relative '../node_modules/react-native/scripts/react_native_pods'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 
-platform :ios, '13.0'
+platform :ios, '13.4'
 prepare_react_native_project!
 
 # If you are using a `react-native-flipper` your iOS build will fail when `NO_FLIPPER=1` is set.
@@ -22,16 +22,11 @@ if linkage != nil
 end
 
 target 'Bikes' do
-
+  
   config = use_native_modules!
 
   permissions_path = '../node_modules/react-native-permissions/ios'
   node_modules_path = '../node_modules'
-
-  pod 'TouchID', :path => "#{node_modules_path}/react-native-touch-id"
-  pod 'Permission-LocationAccuracy', :path => "#{permissions_path}/LocationAccuracy"
-  pod 'Permission-LocationAlways', :path => "#{permissions_path}/LocationAlways"
-  pod 'Permission-LocationWhenInUse', :path => "#{permissions_path}/LocationWhenInUse"
 
   # Flags change depending on the env values.
   flags = get_default_flags()
@@ -55,15 +50,27 @@ target 'Bikes' do
   target 'BikesTests' do
     inherit! :complete
     # Pods for testing
-  end
 
+    
+  end
+  IOS_VERSION = '12.4'
   post_install do |installer|
-    react_native_post_install(
-      installer,
-      # Set `mac_catalyst_enabled` to `true` in order to apply patches
-      # necessary for Mac Catalyst builds
-      :mac_catalyst_enabled => false
-    )
-    __apply_Xcode_12_5_M1_post_install_workaround(installer)
+    react_native_post_install(installer)
+  
+    installer.pods_project.targets.each do |target|
+      target.build_configurations.each do |config|
+        config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = IOS_VERSION
+        config.build_settings["EXCLUDED_ARCHS[sdk=iphonesimulator*]"] = "arm64"
+        config.build_settings["ONLY_ACTIVE_ARCH"] = "YES"
+      end
+  
+      case target.name
+      when 'RCT-Folly'
+        target.build_configurations.each do |config|
+          config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '9.0'
+        end
+      end
+    end
   end
 end
+ 

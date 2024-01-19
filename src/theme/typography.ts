@@ -12,27 +12,23 @@ Available font weights
 
 export const family = {
   Light: Platform.select({
-    ios: 'Overpass-Light', // The font family name
-    android: 'Overpass-Light', // The file name
+    ios: 'Inter-Light', // The font family name
+    android: 'Inter-Light', // The file name
   }),
   Bold: Platform.select({
-    ios: 'Overpass-Bold', // The font family name
-    android: 'Overpass-Bold', // The file name
+    ios: 'Inter-Bold', // The font family name
+    android: 'Inter-Bold', // The file name
   }),
   Regular: Platform.select({
-    ios: 'Overpass-Regular', // The font family name
-    android: 'Overpass-Regular', // The file name
-  }),
-  ExtraBold: Platform.select({
-    ios: 'Overpass-ExtraBold', // The font family name
-    android: 'Overpass-ExtraBold', // The file name
+    ios: 'Inter-Regular', // The font family name
+    android: 'Inter-Regular', // The file name
   }),
   Medium: Platform.select({
-    ios: 'Overpass-Medium', // The font family name
-    android: 'Overpass-Medium', // The file name
+    ios: 'Inter-Medium', // The font family name
+    android: 'Inter-Medium', // The file name
   }),
   SemiBold: Platform.select({
-    ios: 'Overpass-SemiBold', // The font family name
-    android: 'Overpass-SemiBold', // The file name
+    ios: 'Inter-SemiBold', // The font family name
+    android: 'Inter-SemiBold', // The file name
   }),
 };

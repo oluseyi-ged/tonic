@@ -1,7 +1,9 @@
 /* eslint-disable react-native/no-inline-styles */
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import {Onb1, Onb2, Onb3} from '@assets/images';
-import {setFirst} from '@slices/first';
+import {Bg} from '@assets/images';
+import {SvgIcon} from '@components';
+import {HDP} from '@helpers';
+import {family} from '@theme';
 import React, {FC, useEffect, useRef, useState} from 'react';
 import {
   Dimensions,
@@ -22,18 +24,18 @@ export const Onboarding: FC = ({navigation}: any) => {
   const slides = [
     {
       id: 1,
-      label: 'Welcome to Financial Freedom',
-      desc: 'Empowering you with accessible and affordable banking, one tap at a time.',
+      title: 'Welcome to E-Bikes',
+      desc: 'Buy Electric bikes with ease. Try us today for a new journey.',
     },
     {
       id: 2,
-      label: 'Introducing Secure Money Transfers',
-      desc: 'Manage your finances with our NFC enabled app, bringing you secure and fast transactions.',
+      title: 'Discover Future Transportation',
+      desc: 'Experience joy with electric bikes. Simplify your commute, reduce carbon footprint.',
     },
     {
       id: 3,
-      label: 'Personalize Your Experience',
-      desc: 'Tailor the app to fit your unique needs and preferences, making banking easier for you.',
+      title: 'Elevate Your Cycling Experience',
+      desc: 'Unleash electric bike power – smooth rides, eco-friendly. Explore possibilities today!',
     },
   ];
 
@@ -86,12 +88,11 @@ export const Onboarding: FC = ({navigation}: any) => {
   };
 
   return (
-    <ImageBackground
-      source={currentIndex === 0 ? Onb1 : currentIndex === 1 ? Onb2 : Onb3}
-      style={style.pageWrap}>
-      <View />
+    <ImageBackground source={Bg} style={style.pageWrap}>
       <View style={style.container}>
         <View style={style.flowContainer}>
+          <SvgIcon name="box" size={322} height={237} />
+          <SizedBox height={20} />
           <FlatList
             ref={ref}
             data={slides}
@@ -104,51 +105,49 @@ export const Onboarding: FC = ({navigation}: any) => {
                 <View style={style.swipeCont}>
                   <View style={style.swipeTextContainer}>
                     <SizedBox height={59} />
-                    <Text style={style.swipeLabel}>{item.label}</Text>
+                    <Text style={style.swipeLabel}>{item.title}</Text>
                     <SizedBox height={5} />
                     <Text style={style.swipeDesc}>{item.desc}</Text>
-                  </View>
-                  {/* Render indicator */}
-                  <View style={style.ctaGrid}>
-                    <View
-                      style={{
-                        flexDirection: 'row',
-                        justifyContent: 'center',
-                      }}>
-                      {slides.map((_, index) => (
-                        <View
-                          style={[
-                            currentIndex === index
-                              ? style.indicate
-                              : style.unindicate,
-                          ]}>
-                          <View key={index} style={[style.indicator]} />
-                        </View>
-                      ))}
-                    </View>
-                    <TouchableOpacity
-                      onPress={() => {
-                        navigation.navigate('Auth');
-                        dispatch(setFirst(false));
-                      }}>
-                      <Text style={style.skipText}>Skip</Text>
-                    </TouchableOpacity>
                   </View>
                 </View>
               );
             }}
           />
         </View>
-
+        {/* Render indicator */}
+        <View style={style.ctaGrid}>
+          <View
+            style={{
+              flexDirection: 'row',
+              justifyContent: 'center',
+              gap: HDP(20),
+            }}>
+            {slides.map((_, index) => (
+              <View
+                style={[
+                  currentIndex === index ? style.indicate : style.unindicate,
+                ]}
+              />
+            ))}
+          </View>
+        </View>
+        <SizedBox height={48} />
         <View style={style.btnContain}>
           <TouchableOpacity
             style={style.proceedCta}
             onPress={() => {
-              navigation.navigate('Auth');
-              dispatch(setFirst(false));
+              navigation.navigate('Home');
             }}>
-            <Text style={style.proceedText}>GET STARTED</Text>
+            <SvgIcon name="google" size={24} containerStyle={style.iconBg} />
+            <Text style={style.proceedText}>Login with Google</Text>
+            <View style={{width: HDP(24)}} />
           </TouchableOpacity>
+          <SizedBox height={48} />
+          <Text style={[style.swipeDesc, {fontFamily: family.Medium}]}>
+            Don’t have any account?
+            <Text style={style.textSpan}> Sign Up</Text>
+          </Text>
+          <SizedBox height={48} />
         </View>
       </View>
     </ImageBackground>

@@ -1,11 +1,9 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import { Dimensions, PixelRatio, Platform, StatusBar } from 'react-native';
-import { RFValue } from 'react-native-responsive-fontsize';
+import {Dimensions, PixelRatio, Platform} from 'react-native';
 import {
   heightPercentageToDP,
   widthPercentageToDP,
 } from 'react-native-responsive-screen';
-import { flash } from './FlashMessageHelpers';
 
 export * from './consts';
 export const SCREEN_HEIGHT = Dimensions.get('window').height;
@@ -54,59 +52,4 @@ export const RW = (value: number) => {
 
 export const RH = (value: number) => {
   return heightPercentageToDP(getHeightPercentage(value));
-};
-export const convertToUrl = async (image, setFunction, setLoading) => {
-  setLoading(true);
-  try {
-    let imgdata = {
-      file: image,
-      upload_preset: 'fznurftp',
-    };
-
-    fetch('https://api.cloudinary.com/v1_1/dkb3vq7ai/upload', {
-      body: JSON.stringify(imgdata),
-      headers: {
-        'content-type': 'application/json',
-      },
-      method: 'POST',
-    })
-      .then(async r => {
-        setLoading(false);
-        let resdata = await r.json();
-        setFunction(resdata.url);
-        console.log(resdata.url)
-        flash.success({ description: 'Image Loaded' });
-      })
-      .catch(err => console.log(err));
-
-    // singleUpload({
-    //   file: `data:image/png;base64,${image}`,
-    // });
-  } catch (err) {
-    setLoading(false);
-    flash.danger({ description: 'Failed  to load image' });
-    console.log(err)
-
-  }
-};
-
-export const checkVerification = (name, data: any) => {
-  if (name === 'BVN Verification') {
-    return data?.profile?.bvnVerified === 'APPROVED'
-      ? 'Verified'
-      : 'Not Verified';
-  } else if (name === 'Address Verification') {
-    return data?.profile?.addressVerified === 'APPROVED'
-      ? 'Verified'
-      : 'Not Verified';
-  } else if (name === 'ID Verification') {
-    return data?.profile?.idVerified === 'APPROVED' ? 'Verified' : 'Not Verified';
-  }
-};
-export const checkVerificationStatus = (data: any) => {
-  return (
-    data?.profile?.bvnVerified === 'APPROVED' &&
-    data?.profile?.addressVerified === 'APPROVED' &&
-    data?.profile?.idVerified === 'APPROVED'
-  );
 };

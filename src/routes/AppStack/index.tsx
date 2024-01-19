@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {TabsStackScreens} from '@routes/Tabs';
-import {Collections, Describe, More, Payments} from '@screens';
+import {Orders, Track} from '@screens';
 
 import React from 'react';
 
@@ -17,29 +17,15 @@ const AppStackScreens = ({navigation}) => {
         }}
       />
       <AppStack.Screen
-        name="AppMore"
-        component={More}
+        name="Orders"
+        component={Orders}
         options={{
           headerShown: false,
         }}
       />
       <AppStack.Screen
-        name="Payments"
-        component={Payments}
-        options={{
-          headerShown: false,
-        }}
-      />
-      <AppStack.Screen
-        name="Collections"
-        component={Collections}
-        options={{
-          headerShown: false,
-        }}
-      />
-      <AppStack.Screen
-        name="Describe"
-        component={Describe}
+        name="Track"
+        component={Track}
         options={{
           headerShown: false,
         }}

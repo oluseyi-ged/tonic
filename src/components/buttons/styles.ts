@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'red',
     paddingVertical: HDP(18),
     width: '100%',
-    borderRadius: HDP(8),
+    borderRadius: HDP(52),
     justifyContent: 'center',
     alignItems: 'center',
     flexDirection: 'row',
@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
   textCommonStyle: {
     color: palette.textWhite,
     fontSize: RF(14),
-    fontFamily: family.Bold,
+    fontFamily: family.Medium,
   },
 
   borderStyle: {

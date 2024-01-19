@@ -2,8 +2,7 @@
 import {SizedBox, SvgIcon} from '@components';
 import {HDP, HP} from '@helpers';
 import React, {useCallback} from 'react';
-import {Platform, Text, TouchableOpacity, View} from 'react-native';
-import styles from './styles';
+import {Platform, TouchableOpacity, View} from 'react-native';
 
 export const NavMenu = ({state, descriptors, navigation}: any) => {
   const focusedOptions = descriptors[state.routes[state.index].key].options;
@@ -14,44 +13,28 @@ export const NavMenu = ({state, descriptors, navigation}: any) => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const MenuIcons = useCallback(({label, status}: any) => {
     switch (label.toLowerCase()) {
-      case 'more':
+      case 'settings':
         return (
           <View>
-            <SvgIcon name={status ? 'more-active' : 'more'} size={25} />
-            <SizedBox height={6} />
-            <Text style={[!status ? styles.navText : styles.navActive]}>
-              More
-            </Text>
+            <SvgIcon name="settings" size={25} />
           </View>
         );
-      case 'cards':
+      case 'share':
         return (
           <View>
-            <SvgIcon name={status ? 'card-active' : 'card'} size={25} />
-            <SizedBox height={6} />
-            <Text style={[!status ? styles.navText : styles.navActive]}>
-              Collections
-            </Text>
+            <SvgIcon name="share" size={25} />
           </View>
         );
-      case 'bills':
+      case 'bookmarks':
         return (
           <View>
-            <SvgIcon name={status ? 'bill-active' : 'bill'} size={25} />
-            <SizedBox height={6} />
-            <Text style={[!status ? styles.navText : styles.navActive]}>
-              Payments
-            </Text>
+            <SvgIcon name="bookmarks" size={25} />
           </View>
         );
       default:
         return (
           <View>
             <SvgIcon name={status ? 'home' : 'home-inactive'} size={25} />
-            <SizedBox height={6} />
-            <Text style={[!status ? styles.navText : styles.navActive]}>
-              Home
-            </Text>
           </View>
         );
     }
@@ -61,14 +44,15 @@ export const NavMenu = ({state, descriptors, navigation}: any) => {
     <View
       style={{
         width: '100%',
-        backgroundColor: 'white',
+        backgroundColor: '#F1F6FB',
         display: 'flex',
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'space-between',
         alignSelf: 'center',
-        paddingHorizontal: HDP(30),
-        paddingBottom: HDP(Platform.OS === 'android' ? 4 : 10),
+        paddingHorizontal: HDP(40),
+        paddingTop: HDP(24),
+        paddingBottom: HDP(Platform.OS === 'android' ? 18 : 24),
         position: 'absolute',
         bottom: HP(Platform.OS === 'android' ? -2 : -1.5),
         borderTopWidth: 1,
@@ -117,10 +101,6 @@ export const NavMenu = ({state, descriptors, navigation}: any) => {
                 {
                   alignItems: 'center',
                   paddingVertical: HDP(10),
-                },
-                isFocused && {
-                  borderTopColor: '#6CCF00',
-                  borderTopWidth: 4,
                 },
               ]}>
               <MenuIcons label={label} status={isFocused} />

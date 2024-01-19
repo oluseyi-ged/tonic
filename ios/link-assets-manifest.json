@@ -2,28 +2,28 @@
   "migIndex": 1,
   "data": [
     {
-      "path": "src/assets/fonts/Overpass-Black.otf",
-      "sha1": "958f380deea95612ad13d71a89f19a15c20072d5"
+      "path": "src/assets/fonts/Inter-Black.otf",
+      "sha1": "b68a0b0e6b7def1ca8b97f35cb8a1e4cc90a8906"
     },
     {
-      "path": "src/assets/fonts/Overpass-Bold.otf",
-      "sha1": "086bb0a0eb4adcc4cf2e2df9f493dc9b98b1eb91"
+      "path": "src/assets/fonts/Inter-Bold.otf",
+      "sha1": "a5a8d5022dcfd04f7f4762407e28e8dc3d514cdd"
     },
     {
-      "path": "src/assets/fonts/Overpass-Light.otf",
-      "sha1": "d71bedc27a806a597ba41ae51c1c8555d1d90b7e"
+      "path": "src/assets/fonts/Inter-Light.otf",
+      "sha1": "33048a93003c9d9af0bfcf6d5ffda1651bc656c3"
     },
     {
-      "path": "src/assets/fonts/Overpass-Medium.otf",
-      "sha1": "cf4ae677e2121b6459e0d16f98e12a57bc008674"
+      "path": "src/assets/fonts/Inter-Medium.otf",
+      "sha1": "d626534733f00bcd7ba2b5f29425849e30009c75"
     },
     {
-      "path": "src/assets/fonts/Overpass-Regular.otf",
-      "sha1": "0da8259a27eeb68812ab5ab90a6eed54bb8b24f4"
+      "path": "src/assets/fonts/Inter-Regular.otf",
+      "sha1": "9512fa2a4e6303bc0171bef18696c230f71c3813"
     },
     {
-      "path": "src/assets/fonts/Overpass-SemiBold.otf",
-      "sha1": "00118313733baa4de7509e3c88665919ef4ac970"
+      "path": "src/assets/fonts/Inter-SemiBold.otf",
+      "sha1": "f1f3f79e696283d551448dc7c55e477740a6a3d6"
     }
   ]
 }

@@ -2,7 +2,7 @@
 /* eslint-disable react/no-unstable-nested-components */
 import {NavMenu} from '@components';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import {Collections, Home, More, Payments} from '@screens';
+import {Home} from '@screens';
 import {Dimensions, View} from 'react-native';
 const {width, height} = Dimensions.get('window');
 
@@ -30,9 +30,9 @@ export const TabsStackScreens = () => {
         }}
         initialRouteName="Home">
         <Tabs.Screen name="Home" component={Home} />
-        <Tabs.Screen name="Bills" component={Payments} />
-        <Tabs.Screen name="Cards" component={Collections} />
-        <Tabs.Screen name="More" component={More} />
+        <Tabs.Screen name="Bookmarks" component={Home} />
+        <Tabs.Screen name="Share" component={Home} />
+        <Tabs.Screen name="Settings" component={Home} />
       </Tabs.Navigator>
     </View>
   );

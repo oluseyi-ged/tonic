@@ -3,7 +3,6 @@
 import {SizedBox} from '@components';
 import {SvgIcon} from '@components/svg-icon';
 import {HDP} from '@helpers';
-import {palette} from '@theme';
 import React, {FC, useEffect, useState} from 'react';
 import {TextInput as TN, Text, View} from 'react-native';
 import style from './styles';
@@ -118,7 +117,7 @@ export const TextInput: FC<Props> = ({
           {paddingHorizontal: padding},
           inputStyle,
           bordered && style.bordered,
-          focused && {borderColor: palette.mutedGreen},
+          // focused && {borderColor: palette.mutedGreen},
         ]}>
         {iconName1 && (
           <SvgIcon name={iconName1} size={iconSize1 || 20} onPress={onPress1} />

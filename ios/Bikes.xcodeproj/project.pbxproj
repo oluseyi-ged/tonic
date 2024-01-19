@@ -8,19 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* BikesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* BikesTests.m */; };
-		0133B0132EA14C4D9E4ABEB1 /* Overpass-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0B6EC94F1AAD4BD3819EBA75 /* Overpass-Black.otf */; };
-		0CE1265546BA41739D0E4830 /* Overpass-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1A7EC5AB82AE4634B1F17920 /* Overpass-Regular.otf */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		A63978B795B84D59BA65094E /* Overpass-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D6833655D07A4F5EA2965623 /* Overpass-Bold.otf */; };
-		A8D92D0657084F6FAC158742 /* Overpass-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 336A50642C16442FAD39B8DC /* Overpass-Light.otf */; };
 		B0C8D7A42A74BB2500B90173 /* MoolaSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C8D7A32A74BB2500B90173 /* MoolaSwift.swift */; };
-		B1CE686D466341EAA599A5F4 /* Overpass-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7D6CB936B1C44CDBB34709EF /* Overpass-Medium.otf */; };
 		B4219B772D75C2CD36C0453A /* libPods-Bikes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EEBCF9AB8C78AC69441DB43 /* libPods-Bikes.a */; };
 		CB87AB6FB2243DC82D918092 /* libPods-Bikes-BikesTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB26E81DCF70DAA3C8FDA03 /* libPods-Bikes-BikesTests.a */; };
-		DEAE8C754E8F41F6B1B3BEF1 /* Overpass-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9AE43A300DAF4EECAA4A182E /* Overpass-SemiBold.otf */; };
+		7F96CD8C9D8645D689113B37 /* Inter-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 210A9909339741069C302AFB /* Inter-Black.otf */; };
+		AAD03615BBE04E01AB8A809F /* Inter-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 945E93A7EF0547AA8EBC5332 /* Inter-Bold.otf */; };
+		258124D7802E44F29B3BE67C /* Inter-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8ECBA1E6A3004FCAB571DF34 /* Inter-Light.otf */; };
+		E314E7DF66A44DACBF24040C /* Inter-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 16B06B7B8DF34F1FB50BD17F /* Inter-Medium.otf */; };
+		7D71B4E650FE42189AEC1F4B /* Inter-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C6C38A53AA034499A13F3315 /* Inter-Regular.otf */; };
+		4800984D08A944EEB6DB2543 /* Inter-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 94F6BDA86082401EABC05F26 /* Inter-SemiBold.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,36 +29,36 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = "Bikes";
+			remoteInfo = Bikes;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		00079B7EADD7583F893CD264 /* Pods-Bikes-BikesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bikes-BikesTests.release.xcconfig"; path = "Target Support Files/Pods-Bikes-BikesTests/Pods-Bikes-BikesTests.release.xcconfig"; sourceTree = "<group>"; };
-		00E356EE1AD99517003FC87E /* BikesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BikesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* BikesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BikesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* BikesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "BikesTests.m"; sourceTree = "<group>"; };
-		0B6EC94F1AAD4BD3819EBA75 /* Overpass-Black.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Overpass-Black.otf"; path = "../src/assets/fonts/Overpass-Black.otf"; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* Bikes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bikes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "Bikes/AppDelegate.h"; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = "Bikes/AppDelegate.mm"; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "Bikes/Images.xcassets"; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Bikes/Info.plist"; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "Bikes/main.m"; sourceTree = "<group>"; };
-		1A7EC5AB82AE4634B1F17920 /* Overpass-Regular.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Overpass-Regular.otf"; path = "../src/assets/fonts/Overpass-Regular.otf"; sourceTree = "<group>"; };
-		336A50642C16442FAD39B8DC /* Overpass-Light.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Overpass-Light.otf"; path = "../src/assets/fonts/Overpass-Light.otf"; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* BikesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BikesTests.m; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* Bikes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bikes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Bikes/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = Bikes/AppDelegate.mm; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Bikes/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Bikes/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Bikes/main.m; sourceTree = "<group>"; };
 		5EEBCF9AB8C78AC69441DB43 /* libPods-Bikes.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Bikes.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7D6CB936B1C44CDBB34709EF /* Overpass-Medium.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Overpass-Medium.otf"; path = "../src/assets/fonts/Overpass-Medium.otf"; sourceTree = "<group>"; };
-		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = "Bikes/LaunchScreen.storyboard"; sourceTree = "<group>"; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Bikes/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		90B02BB1400D2873162C83C5 /* Pods-Bikes-BikesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bikes-BikesTests.debug.xcconfig"; path = "Target Support Files/Pods-Bikes-BikesTests/Pods-Bikes-BikesTests.debug.xcconfig"; sourceTree = "<group>"; };
-		9AE43A300DAF4EECAA4A182E /* Overpass-SemiBold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Overpass-SemiBold.otf"; path = "../src/assets/fonts/Overpass-SemiBold.otf"; sourceTree = "<group>"; };
 		B0C8D7A22A74BB2400B90173 /* Bikes-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bikes-Bridging-Header.h"; sourceTree = "<group>"; };
 		B0C8D7A32A74BB2500B90173 /* MoolaSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoolaSwift.swift; sourceTree = "<group>"; };
 		B4B4C50AB3D63A640B44A3FC /* Pods-Bikes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bikes.release.xcconfig"; path = "Target Support Files/Pods-Bikes/Pods-Bikes.release.xcconfig"; sourceTree = "<group>"; };
-		D6833655D07A4F5EA2965623 /* Overpass-Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Overpass-Bold.otf"; path = "../src/assets/fonts/Overpass-Bold.otf"; sourceTree = "<group>"; };
 		DAB26E81DCF70DAA3C8FDA03 /* libPods-Bikes-BikesTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Bikes-BikesTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		FF2CE40F903168A7A1FD26CE /* Pods-Bikes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bikes.debug.xcconfig"; path = "Target Support Files/Pods-Bikes/Pods-Bikes.debug.xcconfig"; sourceTree = "<group>"; };
+		210A9909339741069C302AFB /* Inter-Black.otf */ = {isa = PBXFileReference; name = "Inter-Black.otf"; path = "../src/assets/fonts/Inter-Black.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		945E93A7EF0547AA8EBC5332 /* Inter-Bold.otf */ = {isa = PBXFileReference; name = "Inter-Bold.otf"; path = "../src/assets/fonts/Inter-Bold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8ECBA1E6A3004FCAB571DF34 /* Inter-Light.otf */ = {isa = PBXFileReference; name = "Inter-Light.otf"; path = "../src/assets/fonts/Inter-Light.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		16B06B7B8DF34F1FB50BD17F /* Inter-Medium.otf */ = {isa = PBXFileReference; name = "Inter-Medium.otf"; path = "../src/assets/fonts/Inter-Medium.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C6C38A53AA034499A13F3315 /* Inter-Regular.otf */ = {isa = PBXFileReference; name = "Inter-Regular.otf"; path = "../src/assets/fonts/Inter-Regular.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		94F6BDA86082401EABC05F26 /* Inter-SemiBold.otf */ = {isa = PBXFileReference; name = "Inter-SemiBold.otf"; path = "../src/assets/fonts/Inter-SemiBold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +87,7 @@
 				00E356F21AD99517003FC87E /* BikesTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = "BikesTests";
+			path = BikesTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -108,7 +108,7 @@
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = "Bikes";
+			name = Bikes;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
@@ -158,12 +158,12 @@
 		8B1229F128BD4C4F8226F407 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				0B6EC94F1AAD4BD3819EBA75 /* Overpass-Black.otf */,
-				D6833655D07A4F5EA2965623 /* Overpass-Bold.otf */,
-				336A50642C16442FAD39B8DC /* Overpass-Light.otf */,
-				7D6CB936B1C44CDBB34709EF /* Overpass-Medium.otf */,
-				1A7EC5AB82AE4634B1F17920 /* Overpass-Regular.otf */,
-				9AE43A300DAF4EECAA4A182E /* Overpass-SemiBold.otf */,
+				210A9909339741069C302AFB /* Inter-Black.otf */,
+				945E93A7EF0547AA8EBC5332 /* Inter-Bold.otf */,
+				8ECBA1E6A3004FCAB571DF34 /* Inter-Light.otf */,
+				16B06B7B8DF34F1FB50BD17F /* Inter-Medium.otf */,
+				C6C38A53AA034499A13F3315 /* Inter-Regular.otf */,
+				94F6BDA86082401EABC05F26 /* Inter-SemiBold.otf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -197,7 +197,7 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = "BikesTests";
+			name = BikesTests;
 			productReference = 00E356EE1AD99517003FC87E /* BikesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
@@ -217,8 +217,8 @@
 			);
 			dependencies = (
 			);
-			name = "Bikes";
-			productName = "Bikes";
+			name = Bikes;
+			productName = Bikes;
 			productReference = 13B07F961A680F5B00A75B9A /* Bikes.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -272,12 +272,12 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				0133B0132EA14C4D9E4ABEB1 /* Overpass-Black.otf in Resources */,
-				A63978B795B84D59BA65094E /* Overpass-Bold.otf in Resources */,
-				A8D92D0657084F6FAC158742 /* Overpass-Light.otf in Resources */,
-				B1CE686D466341EAA599A5F4 /* Overpass-Medium.otf in Resources */,
-				0CE1265546BA41739D0E4830 /* Overpass-Regular.otf in Resources */,
-				DEAE8C754E8F41F6B1B3BEF1 /* Overpass-SemiBold.otf in Resources */,
+				7F96CD8C9D8645D689113B37 /* Inter-Black.otf in Resources */,
+				AAD03615BBE04E01AB8A809F /* Inter-Bold.otf in Resources */,
+				258124D7802E44F29B3BE67C /* Inter-Light.otf in Resources */,
+				E314E7DF66A44DACBF24040C /* Inter-Medium.otf in Resources */,
+				7D71B4E650FE42189AEC1F4B /* Inter-Regular.otf in Resources */,
+				4800984D08A944EEB6DB2543 /* Inter-SemiBold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,7 +439,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "BikesTests/Info.plist";
+				INFOPLIST_FILE = BikesTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -451,7 +451,7 @@
 					"-lc++",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.tonic.test";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tonic.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bikes.app/Bikes";
 			};
@@ -464,7 +464,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = "BikesTests/Info.plist";
+				INFOPLIST_FILE = BikesTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -476,7 +476,7 @@
 					"-lc++",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.tonic.test";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tonic.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bikes.app/Bikes";
 			};
@@ -493,8 +493,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DY3R49T3HK;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "Bikes/Info.plist";
-             INFOPLIST_KEY_CFBundleDisplayName = "Bikes";
+				INFOPLIST_FILE = Bikes/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Bikes;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -506,8 +505,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.tonic.test";
-				PRODUCT_NAME = "Bikes";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tonic.test;
+				PRODUCT_NAME = Bikes;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -529,8 +528,7 @@
 				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DY3R49T3HK;
-				INFOPLIST_FILE = "Bikes/Info.plist";
-             INFOPLIST_KEY_CFBundleDisplayName = "Bikes";
+				INFOPLIST_FILE = Bikes/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Bikes;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -542,8 +540,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.tonic.test";
-				PRODUCT_NAME = "Bikes";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tonic.test;
+				PRODUCT_NAME = Bikes;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;

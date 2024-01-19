@@ -22,7 +22,7 @@ export const palette = {
   peace: '#6A960D',
   mutedGreen: '#6CCF004F',
   blueBlack: '#082932',
-  dark: '#1F2024',
+  dark: '#041C2E',
   blue: '#127DFD',
   lightText: '#BABABB',
   deepprimary: '#69940D',
